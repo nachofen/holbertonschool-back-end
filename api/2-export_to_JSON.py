@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-"""Write a Python script that, using the jsonplaceholder.typicode.com API,
-that returns information for a given employee ID about his/her
-TODO list progress."""
+"""Using what you did in the task #0, extend your Python script to export data in the JSON format."""
 
 import json
 import requests
