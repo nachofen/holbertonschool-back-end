@@ -23,8 +23,6 @@ if __name__ == "__main__":
     )
     user_todo = json.loads(user_todo_req.text)
 
-    csv_filename = f"{employee_id}.csv"
-
     user_data = {
         employee_id: [
             {
