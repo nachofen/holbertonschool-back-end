@@ -27,13 +27,10 @@ if __name__ == "__main__":
     csv_filename = f"{employee_id}.csv"
 
     with open(csv_filename, "w", newline="", encoding="utf-8") as csv_file:
-        csv_writer = csv.writer(csv_file)
+        csv_writer = csv.writer(csv_file, quoting=csv.QUOTE_ALL)
     # csv.writer is the function provided by the csv module that creates
     # a CSV writer object.
     # csv_file is the file object that you've opened using the open() func
-        csv_writer.writerow(
-            ["USER_ID", "USERNAME", "TASK_COMPLETED_STATUS", "TASK_TITLE"]
-        )
 
         for task in user_todo:
             csv_writer.writerow([
